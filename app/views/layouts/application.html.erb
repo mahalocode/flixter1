@@ -25,10 +25,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="booyah-box" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-              </ul>
+           <li>
+              <%= link_to 'See All Courses', courses_path %>
+           </li>
+           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
             <% if current_user %>
             You're signed in as <%= current_user.email %>.
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
@@ -36,7 +38,7 @@
             <%= link_to "Sign In", new_user_session_path %>
             <%= link_to "Sign Up", new_user_registration_path %>
             <% end %>
-            </ul>
+          </ul>
         </div>
   </div>
 </div>
