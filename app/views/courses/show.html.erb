@@ -20,4 +20,19 @@
   <div class="col-sm-8 col-xs-12">
     <%= @course.description %>
   </div>
+
+  <div class="col-xs-12">
+    <% @course.sections.each do |section| %>
+      <div class="section">
+        <%= section.title %>
+        <% section.lessons.each do |lesson| %>
+          <div class="lesson">
+            <b><%= lesson.title %></b>
+            -
+            <%= lesson.subtitle %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
