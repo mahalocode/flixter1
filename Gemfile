@@ -2,11 +2,14 @@ source 'https://rubygems.org'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
-gem 'rails_12factor', group: :production
+
+ gem 'pg' ,                 group: :production 
+ gem 'rails_12factor'
+gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
-gem 'pg'
+
 gem 'devise'
 gem 'simple_form'
 # Use SCSS for stylesheets
