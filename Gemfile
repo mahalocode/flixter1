@@ -9,13 +9,14 @@ gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
-
+gem 'stripe'
 gem 'devise'
 gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
+gem 'figaro'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
