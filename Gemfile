@@ -10,6 +10,7 @@ gem 'carrierwave'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
 gem 'stripe'
+gem 'ranked-model'
 gem 'devise'
 gem 'simple_form'
 # Use SCSS for stylesheets
