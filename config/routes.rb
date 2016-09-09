@@ -8,12 +8,14 @@ Rails.application.routes.draw do
   resources :courses, only: [:index, :show]
   resources :lessons, only: [:show]
   namespace :instructor do
+    resource :lessons, only: [:update]
     resources :sections, only: [] do 
       resources :lessons, only: [:new, :create]
     end
     resources :courses, only: [:new, :create, :show] do
       resources :sections, only: [:new, :create]
     end
+      resources :sections, only: [:update]
   end
 end
   # The priority is based upon order of creation: first created -> highest priority.

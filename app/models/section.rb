@@ -3,5 +3,5 @@ class Section < ActiveRecord::Base
 	has_many :lessons
 
 	include RankedModel
-    ranks :row_order, :with_same => :course_i
+    ranks :row_order, :with_same => :course_id
 end

@@ -6,22 +6,22 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	font-family: "Helvetica Neue", Helvetica;
 	font-weight: 200;
 	box-shadow: 0px 1px 3px #2a2a2a;
-	background:url('dark_wood.png');
+	background-color: lightblue;
 }
 
 .navbar-inverse a.navbar-brand {
 	font-family: "Helvetica Neue", Helvetica;
 	font-weight: 100;
-	color:white;
+	color:lightblue;
 }
 
 .hero {
-	background: url('hero.jpg') no-repeat center center fixed;
+   background: url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:625px;
+  height:650px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -70,7 +70,7 @@ body {
 	}
 
 	#footer {
-		height:60px;
+		height:100px;
 		background-color: rgba(36,32,33,0.9);
 	}
 
