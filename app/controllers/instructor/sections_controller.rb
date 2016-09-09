@@ -7,9 +7,14 @@ class Instructor::SectionsController < ApplicationController
 		@section = Section.new
 	end
 
+   def update
+      current_lesson.update_attributes(lesson_params)
+      render text: 'updated!'
+    end
+
 	 def create
     @section = @course.sections.create(section_params)
-    redirect_to instructor_sections_lessons_path(@section)
+    redirect_to instructor_course_path(@course)
    end
 
   private
@@ -29,6 +34,6 @@ class Instructor::SectionsController < ApplicationController
     end
   end
   def section_params
-    params.require(:sections).permit(:title)
+    params.require(:sections).permit(:title, :row_ordeer_position)
   end
 end
