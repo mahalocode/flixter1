@@ -3,9 +3,6 @@ class Instructor::SectionsController < ApplicationController
 	 before_action :require_authorized_for_current_course, only: [:create]
    before_action :require_authorized_for_current_section, only: [:update]
 
-	def new
-		@section = Section.new
-	end
 
    def update
       current_lesson.update_attributes(lesson_params)
