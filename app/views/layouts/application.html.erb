@@ -31,8 +31,8 @@
            </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Link</a></li>
-            <% if current_user %>
-            You're signed in as <%= current_user.email %>.
+            <% if user_signed_in? %>
+            <li><%= link_to 'My Dashboard', dashboard_path %></li>
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
             <% else %>
             <%= link_to "Sign In", new_user_session_path %>
