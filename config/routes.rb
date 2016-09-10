@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :courses, only: [:new, :create, :show] do
       resources :sections, only: [:new, :create]
     end
-      resources :sections, only: [:update]
+    resources :sections, only: [:update]
   end
 end
   # The priority is based upon order of creation: first created -> highest priority.

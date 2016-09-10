@@ -13,8 +13,8 @@ class Instructor::SectionsController < ApplicationController
     end
 
 	 def create
-    @section = @course.sections.create(section_params)
-    redirect_to instructor_course_path(@course)
+    @section = current_course.sections.create(section_params)
+    redirect_to instructor_course_path(current_course)
    end
 
   private
@@ -34,6 +34,6 @@ class Instructor::SectionsController < ApplicationController
     end
   end
   def section_params
-    params.require(:sections).permit(:title, :row_ordeer_position)
+    params.require(:section).permit(:title, :row_order_position)
   end
 end
