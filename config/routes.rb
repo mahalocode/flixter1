@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   resources :lessons, only: [:show]
   namespace :instructor do
     resource :lessons, only: [:update]
-    resources :sections, only: [:update] do 
-      resources :lessons, only: [:new, :create]
+    resources :sections, only: [:update] do
+      resources :lessons, only: [:create]
     end
     resources :courses, only: [:new, :create, :show] do
       resources :sections, only: [:create]
@@ -72,4 +72,3 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
