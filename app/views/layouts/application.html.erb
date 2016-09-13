@@ -63,6 +63,36 @@
             <b>Teachers</b>
             <br/>
             <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <br/>
+            <%= link_to 'My Dashboard', dashboard_path %>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <b>About</b>
+            <br/>
+            <%= link_to 'Team', '#' %>
+            <br/>
+            <%= link_to 'Careers', '#' %>
+            <br/>
+            <%= link_to 'Privacy Policy', '#' %>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <b>Contact</b>
+            <br/>
+            munch2018@gmail.com
+            <br/>
+            Kilauea farm
+            <br/>
+            Kilaura HI, 96754
+        </div>
+        <div class="col-xs-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            <%= link_to 'https://github.com/mahalocode' do %>
+            <%= image_tag 'github.png', class: 'social-button' %>
+            <% end %>
+            <%= image_tag 'facebook.png', class: 'social-button' %>
+            <%= image_tag 'twitter.png', class: 'social-button' %>
         </div>
     </div>
     <br class="clr"/>

@@ -1,33 +1,39 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-h1, h2, h3, h4, h5, h6, .navbar {
-	border-radius:0;
+.navbar,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	border-radius: 0;
 	font-family: "Helvetica Neue", Helvetica;
 	font-weight: 200;
-	box-shadow: 0px 1px 3px #2a2a2a;
+	box-shadow: 0 1px 3px #2a2a2a;
 	background-color: lightblue;
 }
 
 .navbar-inverse a.navbar-brand {
 	font-family: "Helvetica Neue", Helvetica;
 	font-weight: 100;
-	color:lightblue;
+	color: lightblue;
 }
 
 .hero {
-   background: url('hero.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:650px;
-  box-shadow: 0px 3px 8px #2a2a2a;
+	background: url('hero.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 650px;
+	box-shadow: 0 3px 8px #2a2a2a;
 }
 
 .frosty {
-	background:rgba(0,0,0, 0.5);
-	color:white;
+	background: rgba(0,0,0, 0.5);
+	color: white;
 }
 
 .frosty h1 {
@@ -43,99 +49,113 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .btn {
-	border-radius:0;
+	border-radius: 0;
 }
 
 body {
-	 background: url('bg.png');
-     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+	background: url('bg.png');
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
 .booyah-box {
-	  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	  box-shadow: 1px 1px 2px 0 #d0d0d0;
-	  background: #fff;
-	  border: 1px solid #ccc;
-	  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-	  padding:10px;
-	}
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	box-shadow: 1px 1px 2px 0 #d0d0d0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	padding: 10px;
+}
 
-	.booyah-box h2, .booyah-box h1 {
-		margin:10px;
-	}
+.booyah-box h1,
+.booyah-box h2 {
+	margin: 10px;
+}
 
-	.clr {
-		  clear:both;
-	}
+.clr {
+	clear: both;
+}
 
-	#footer {
-		height:100px;
-		background-color: rgba(36,32,33,0.9);
-	}
+#footer {
+	height: $footer-height;
+	color: white;
+	background-color: rgba(36,32,33,0.9);
+	font-family: "Helvetica Neue",Helvetica;
+	padding: 10px 0;
+	font-weight: 100;
+}
 
-	.filed_with_errors {
-		  color: #ff3333;
-		  background-color: #FFEEEE;
-		  border-radius: 3px;
-		  padding:8px;
-		  margin:10px;
-	}
+.filed_with_errors {
+	color: #ff3333;
+	background-color: #FFEEEE;
+	border-radius: 3px;
+	padding: 8px;
+	margin: 10px;
+}
 
-	.lesson {
-		background-color:black;
-		margin-top:10px;
-		height:130px;
-		font-size: 15px;
-	}
+.lesson {
+	background-color: black;
+	margin-top: 10px;
+	height: 130px;
+	font-size: 15px;
+}
 
-	.section {
-		border: 1px solid;
-		border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-		padding: 20px;
-	}
+.section {
+	border: 1px solid;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	padding: 20px;
+}
 
-	.lesson a {
-		color:white;
-		font-family: "Helvetica Neue",Helvetica;
-  		font-weight:100;
-	}
+.lesson a {
+	color: white;
+	font-family: "Helvetica Neue",Helvetica;
+	font-weight: 100;
+}
 
-	.lesson a b {
-		font-weight:100;
-		font-size:25px;
-	}
+.lesson a b {
+	font-weight: 100;
+	font-size: 25px;
+}
 
-	ul .header {
-		font-size:25px;
-    }
+ul .header {
+	font-size: 25px;
+}
 
-    ul .header .glyphicon {
-    	font-size:20px;
-    }
+ul .header .glyphicon {
+	font-size: 20px;
+}
 
-    .section-li {
-    	border: 1px solid;
-    	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    	padding:20px;
-    	margin:20px;
-    }
+.section-li {
+	border: 1px solid;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	padding: 20px;
+	margin: 20px;
+}
 
-    .lesson li {
-    	background:black;
-    	color:white;
-    	margin:10px;
-    	font-family: "Helvetica Neue", Helvetica;
-    	font-weight:100;
-    	padding:8px;
-    	font-size:15px;
-    }
+.lesson li {
+	background: black;
+	color: white;
+	margin: 10px;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 100;
+	padding: 8px;
+	font-size: 15px;
+}
 
-    .lesson li b {
-    	font-size:25px;
-    	font-weight:100;
-    }
+.lesson li b {
+	font-size: 25px;
+	font-weight: 100;
+}
 
-    .lessons li p {
-    	margin:0;
-    }
+.lessons li p {
+	margin: 0;
+}
+
+.social-button {
+	width: 32px;
+	margin: 4px;
+}
+
+.social a:hover {
+	text-decoration: none;
+}
