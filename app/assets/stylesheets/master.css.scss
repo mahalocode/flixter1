@@ -76,15 +76,6 @@ body {
 	clear: both;
 }
 
-#footer {
-	height: $footer-height;
-	color: white;
-	background-color: rgba(36,32,33,0.9);
-	font-family: "Helvetica Neue",Helvetica;
-	padding: 10px 0;
-	font-weight: 100;
-}
-
 .filed_with_errors {
 	color: #ff3333;
 	background-color: #FFEEEE;
@@ -149,13 +140,4 @@ ul .header .glyphicon {
 
 .lessons li p {
 	margin: 0;
-}
-
-.social-button {
-	width: 32px;
-	margin: 4px;
-}
-
-.social a:hover {
-	text-decoration: none;
 }

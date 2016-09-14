@@ -1,6 +1,6 @@
 class Lesson < ActiveRecord::Base
 	belongs_to :section
-
+  mount_uploadervideo, VideoUploader
 
 	include RankedModel
 	ranks :row_order, :with_same => :section_id
@@ -10,7 +10,7 @@ class Lesson < ActiveRecord::Base
 	 if lesson.blank? && section.next_section
 		 return section.next_section.lessons.rank(:row_order).first
 	 end
-	 
+
 	 return lesson
 	end
 end
