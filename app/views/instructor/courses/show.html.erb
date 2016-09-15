@@ -55,7 +55,7 @@
                 <span class=" glyphicon glyphicon-list"></span>
             <%= section.title %>
         </div>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'pull-right btn btn-primary btn-xs' %>
+        <%= link_to 'New Lesson', instructor_section_lessons_path(section), class: 'pull-right btn btn-primary btn-xs' %>
 
         <br class="clr"/>
         <br class="clr"/>
@@ -114,7 +114,7 @@
         <div class="modal-body">
             <%= f.input :title %>
             <%= f.input :subtitle %>
-
+            <%= f.input :video %>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
